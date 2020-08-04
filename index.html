@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<body>
+	<p id="rand"> </p>
+	<p>This works</p>
+	
 	<script>
-		var rand = Math.floor((Math.random() * 9) + 1);
+		document.getElementById("rand").innerHTML = Math.floor((Math.random() * 9) + 1);
 	</script>
-	<p>	rand </p>
+	
 	</body>
 </html>
