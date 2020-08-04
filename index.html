@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+		var howMany = 3;  // number of pages below, count them.
+
+		howMany = howMany-1
+		var page = new Array(howMany+1);
+
+		page[0]="index.html";
+		page[1]="index2.html";
+		page[2]="index.html";
+
+		function rndnumber(){
+			var randscript = -1;
+			while (randscript < 0 || randscript > howMany || isNaN(randscript)){
+				randscript = parseInt(Math.random()*(howMany+1));
+			}
+			return randscript;
+		}
+		quo = rndnumber();
+		quox = page[quo];
+		location.href=(quox);
 	</body>
 </html>
