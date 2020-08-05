@@ -2269,7 +2269,6 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 6px;
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -2277,7 +2276,6 @@ input, select, textarea {
 	}
 
 		.image img {
-			border-radius: 6px;
 			display: block;
 		}
 
@@ -2323,13 +2321,11 @@ input, select, textarea {
 
 		.image.phone {
 			box-shadow: none;
-			border-radius: 0;
 			margin: 0 0 3em 0;
 			width: 13em;
 		}
 
 			.image.phone img {
-				border-radius: 0;
 				display: block;
 				position: relative;
 				width: 100%;
