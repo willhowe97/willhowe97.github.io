@@ -2,13 +2,7 @@
 <html>
 	<body>
 	<p id="rand"> </p>
-	
-	<script>
-		var history = window.history.length;
-		document.write("history length: " +history)
-		var ex = document.referrer;
-        document.write("previous URL is " +ex)
-	</script>
+
 	<script>
 		var prevURL = document.referrer;
 		var search_params_prevURL = prevUrl.searchParams; 
@@ -27,6 +21,7 @@
 		search_params.set('SESSION_ID', seid);
 		url.search = search_params.toString();
 		var websiteName = url.toString();
+		document.write(websiteName);
 		window.location.href = websiteName;
 	</script>
 	
