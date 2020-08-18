@@ -4,8 +4,10 @@
 	<p id="rand"> </p>
 	
 	<script>
+		var history = window.history.length;
+		document.write("history length: " +history)
 		var ex = document.referrer;
-          document.write("previous URL is " +ex)
+        document.write("previous URL is " +ex)
 	</script>
 	<script>
 		var randNumber = Math.floor((Math.random() * 9));
