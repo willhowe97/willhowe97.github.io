@@ -4,9 +4,10 @@
 	<p id="rand"> </p>
 	
 	<script>
-		var randNumber = Math.floor((Math.random() * 9) + 1);
+		var randNumber = Math.floor((Math.random() * 9));
+		var websites = ["https://willhowe.github.io/indexAX1","https://willhowe.github.io/indexCS2","https://willhowe.github.io/indexPP3","https://willhowe.github.io/indexEU4","https://willhowe.github.io/indexLF5","https://willhowe.github.io/indexJH6","https://willhowe.github.io/indexYT7","https://willhowe.github.io/indexIC8","https://willhowe.github.io/indexWN9",];
 		document.getElementById("rand").innerHTML = randNumber;
-		var websiteName = "https://willhowe97.github.io/index" + randNumber
+		var websiteName = websites[randNumber];
 		window.location.href = websiteName
 	</script>
 	
