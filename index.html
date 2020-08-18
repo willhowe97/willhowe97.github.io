@@ -5,9 +5,15 @@
 
 	<script>
 		var randNumber = Math.floor((Math.random() * 9));
-		var websites = ["https://willhowe97.github.io/indexAX1","https://willhowe97.github.io/indexCS2","https://willhowe97.github.io/indexPP3","https://willhowe97.github.io/indexEU4","https://willhowe97.github.io/indexLF5","https://willhowe97.github.io/indexJH6","https://willhowe97.github.io/indexYT7","https://willhowe97.github.io/indexIC8","https://willhowe97.github.io/indexWN9",];
+		var websites = ["https://www.surveymonkey.co.uk/r/TLC2YMK?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/TVBHLZ7?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/T7SC6Q3?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/T9L6PRZ?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/T9BQRJP?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/T2SK7KC?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/TCLY7NG?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/TCRQLKX?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]", "https://www.surveymonkey.co.uk/r/TJ9Q29J?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]"]
 		document.getElementById("rand").innerHTML = randNumber;
-		var websiteName = websites[randNumber];
+		var url = websites[randNumber];
+		var search_params = url.searchParams;
+		search_params.set('PROLIFIC_PID', '');
+		search_params.set('STUDY_ID', '');
+		search_params.set('SESSION_ID', '');
+		url.search = search_params.toString();
+		var websiteName = url.toString();
 		window.location.href = websiteName
 	</script>
 	
