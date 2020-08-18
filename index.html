@@ -2,18 +2,12 @@
 <html>
 	<body>
 	<p id="rand"> </p>
-	<p id="prolificData"> </p>
-	<p id="prolificDataCut"> </p>
-	<p id="websiteNameData"> </p>
 
 	<script>
 		var randNumber = Math.floor((Math.random() * 9));
-		var prolificData = document.referrer;
-		prolificDataCut = prolificData.search;
 		var websites = ["https://willhowe97.github.io/indexAX1","https://willhowe97.github.io/indexCS2","https://willhowe97.github.io/indexPP3","https://willhowe97.github.io/indexEU4","https://willhowe97.github.io/indexLF5","https://willhowe97.github.io/indexJH6","https://willhowe97.github.io/indexYT7","https://willhowe97.github.io/indexIC8","https://willhowe97.github.io/indexWN9",];
 		document.getElementById("rand").innerHTML = randNumber;
 		var websiteName = websites[randNumber];
-		var websiteNameData = websiteName + prolificDatacut;
 		window.location.href = websiteName
 	</script>
 	
