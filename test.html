@@ -3,11 +3,11 @@
 	<body>
 	<p id="rand"> </p>
 	<script>
-		var prevURL = document.referrer;
-		var search_params_prevURL = prevUrl.searchParams; 
-		var pid = search_params_prevURL.get('PROLIFIC_PID');
-		var stid = search_params_prevURL.get('STUDY_ID');
-		var seid = search_params_prevURL.get('SESSION_ID');
+		var currentURL = window.location.href;
+		var search_params_currentURL = currentURL.searchParams; 
+		var pid = search_params_currentURL.get('PROLIFIC_PID');
+		var stid = search_params_currentURL.get('STUDY_ID');
+		var seid = search_params_currentURL.get('SESSION_ID');
 		
 		var randNumber = Math.floor((Math.random() * 9));
 		var websites = ["https://www.surveymonkey.co.uk/r/TLC2YMK?PROLIFIC_PID=[PROLIFIC_PID_value]&STUDY_ID=[STUDY_ID_value]&SESSION_ID=[SESSION_ID_value]",
